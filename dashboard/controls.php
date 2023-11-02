@@ -1,0 +1,344 @@
+<?php
+if ( ! defined( 'ABSPATH' ) ) exit;
+add_settings_field(
+  'wpucd-check-products-taxo-widget',
+  '',
+  'wpucd_plugin_function_for_datas_callback',
+  'wpucd-plugin-main-menu',
+  'wpucd-plugin-switch-section'
+);
+add_settings_field(
+  'wpucd-notice-position',
+  '',
+  'wpucd_plugin_function_for_datas_callback',
+  'wpucd-plugin-main-menu',
+  'wpucd-plugin-switch-section'
+);
+add_settings_field(
+  'wpucd-product-shipted',
+  '',
+  'wpucd_plugin_function_for_datas_callback',
+  'wpucd-plugin-main-menu',
+  'wpucd-plugin-switch-section'
+);
+add_settings_field(
+  'wpucd-product-multidates',
+  '',
+  'wpucd_plugin_function_for_datas_callback',
+  'wpucd-plugin-main-menu',
+  'wpucd-plugin-switch-section'
+);
+add_settings_field(
+  'wpucd-product-delivered',
+  '',
+  'wpucd_plugin_function_for_datas_callback',
+  'wpucd-plugin-main-menu',
+  'wpucd-plugin-switch-section'
+);
+add_settings_field(
+  'wpucd-shipimg-check',
+  '',
+  'wpucd_plugin_function_for_datas_callback',
+  'wpucd-plugin-main-menu',
+  'wpucd-plugin-switch-section'
+);
+add_settings_field(
+  'wpucd-shipping-icon',
+  '',
+  'wpucd_plugin_function_for_datas_callback',
+  'wpucd-plugin-main-menu',
+  'wpucd-plugin-switch-section'
+);
+add_settings_field(
+  'wpucd-check-pagechack-taxo-widget',
+  '',
+  'wpucd_plugin_function_for_datas_callback',
+  'wpucd-plugin-main-menu',
+  'wpucd-plugin-switch-section'
+);
+add_settings_field(
+  'wpucd-check-weekend0-widget',
+  '',
+  'wpucd_plugin_function_for_datas_callback',
+  'wpucd-plugin-main-menu',
+  'wpucd-plugin-switch-section'
+);
+add_settings_field(
+  'wpucd-check-weekend1-widget',
+  '',
+  'wpucd_plugin_function_for_datas_callback',
+  'wpucd-plugin-main-menu',
+  'wpucd-plugin-switch-section'
+);
+add_settings_field(
+  'wpucd-check-weekend2-widget',
+  '',
+  'wpucd_plugin_function_for_datas_callback',
+  'wpucd-plugin-main-menu',
+  'wpucd-plugin-switch-section'
+);
+add_settings_field(
+  'wpucd-check-weekend3-widget',
+  '',
+  'wpucd_plugin_function_for_datas_callback',
+  'wpucd-plugin-main-menu',
+  'wpucd-plugin-switch-section'
+);
+add_settings_field(
+  'wpucd-check-weekend4-widget',
+  '',
+  'wpucd_plugin_function_for_datas_callback',
+  'wpucd-plugin-main-menu',
+  'wpucd-plugin-switch-section'
+);
+add_settings_field(
+  'wpucd-check-weekend5-widget',
+  '',
+  'wpucd_plugin_function_for_datas_callback',
+  'wpucd-plugin-main-menu',
+  'wpucd-plugin-switch-section'
+);
+add_settings_field(
+  'wpucd-check-weekend6-widget',
+  '',
+  'wpucd_plugin_function_for_datas_callback',
+  'wpucd-plugin-main-menu',
+  'wpucd-plugin-switch-section'
+);
+// Taxos label check
+add_settings_field(
+  'wpucd-thankyou-page-check',
+  '',
+  'wpucd_plugin_function_for_datas_callback',
+  'wpucd-plugin-main-menu',
+  'wpucd-plugin-switch-section'
+);
+add_settings_field(
+  'wpucd-send-date-email',
+  '',
+  'wpucd_plugin_function_for_datas_callback',
+  'wpucd-plugin-main-menu',
+  'wpucd-plugin-switch-section'
+);
+// controls
+// *** estimass
+add_settings_field(
+  'wpucd-estimass-color',
+  '',
+  'wpucd_plugin_function_for_datas_callback',
+  'wpucd-plugin-main-menu',
+  'wpucd-plugin-switch-section'
+);
+add_settings_field(
+  'wpucd-estimass-fontsize',
+  '',
+  'wpucd_plugin_function_for_datas_callback',
+  'wpucd-plugin-main-menu',
+  'wpucd-plugin-switch-section'
+);
+add_settings_field(
+  'wpucd-estimass-fontweight',
+  '',
+  'wpucd_plugin_function_for_datas_callback',
+  'wpucd-plugin-main-menu',
+  'wpucd-plugin-switch-section'
+);
+add_settings_field(
+  'wpucd-estimass-fontfamilly',
+  '',
+  'wpucd_plugin_function_for_datas_callback',
+  'wpucd-plugin-main-menu',
+  'wpucd-plugin-switch-section'
+);
+add_settings_field(
+  'wpucd-estimdate-color',
+  '',
+  'wpucd_plugin_function_for_datas_callback',
+  'wpucd-plugin-main-menu',
+  'wpucd-plugin-switch-section'
+);
+add_settings_field(
+  'wpucd-reason-color',
+  '',
+  'wpucd_plugin_function_for_datas_callback',
+  'wpucd-plugin-main-menu',
+  'wpucd-plugin-switch-section'
+);
+add_settings_field(
+  'wpucd-reason-fontsize',
+  '',
+  'wpucd_plugin_function_for_datas_callback',
+  'wpucd-plugin-main-menu',
+  'wpucd-plugin-switch-section'
+);
+add_settings_field(
+  'wpucd-reason-bdrcolor',
+  '',
+  'wpucd_plugin_function_for_datas_callback',
+  'wpucd-plugin-main-menu',
+  'wpucd-plugin-switch-section'
+);
+add_settings_field(
+  'wpucd-reason-bdrwidth',
+  '',
+  'wpucd_plugin_function_for_datas_callback',
+  'wpucd-plugin-main-menu',
+  'wpucd-plugin-switch-section'
+);
+add_settings_field(
+  'wpucd-reason-fontweight',
+  '',
+  'wpucd_plugin_function_for_datas_callback',
+  'wpucd-plugin-main-menu',
+  'wpucd-plugin-switch-section'
+);
+// *** dimensions
+add_settings_field(
+  'wpucd-estimdate-fontsize',
+  '',
+  'wpucd_plugin_function_for_datas_callback',
+  'wpucd-plugin-main-menu',
+  'wpucd-plugin-switch-section'
+);
+add_settings_field(
+  'wpucd-estimdate-fontweight',
+  '',
+  'wpucd_plugin_function_for_datas_callback',
+  'wpucd-plugin-main-menu',
+  'wpucd-plugin-switch-section'
+);
+add_settings_field(
+  'wpucd-estimdate-fontfamilly',
+  '',
+  'wpucd_plugin_function_for_datas_callback',
+  'wpucd-plugin-main-menu',
+  'wpucd-plugin-switch-section'
+);
+
+// Register Settings all
+register_setting(
+  'wpucd-plugin-settings', 
+  'wpucd-check-products-taxo-widget' 
+);
+register_setting(
+  'wpucd-plugin-settings', 
+  'wpucd-notice-position' 
+);
+register_setting(
+  'wpucd-plugin-settings', 
+  'wpucd-product-shipted' 
+);
+register_setting(
+  'wpucd-plugin-settings', 
+  'wpucd-product-multidates' 
+);
+register_setting(
+  'wpucd-plugin-settings', 
+  'wpucd-product-delivered'
+);
+register_setting(
+  'wpucd-plugin-settings', 
+  'wpucd-shipimg-check' 
+);
+register_setting(
+  'wpucd-plugin-settings', 
+  'wpucd-shipping-icon' 
+);
+register_setting(
+  'wpucd-plugin-settings', 
+  'wpucd-check-pagechack-taxo-widget' 
+);
+register_setting(
+  'wpucd-plugin-settings', 
+  'wpucd-check-weekend0-widget' 
+);
+register_setting(
+  'wpucd-plugin-settings', 
+  'wpucd-check-weekend1-widget' 
+);
+register_setting(
+  'wpucd-plugin-settings', 
+  'wpucd-check-weekend2-widget' 
+);
+register_setting(
+  'wpucd-plugin-settings', 
+  'wpucd-check-weekend3-widget' 
+);
+register_setting(
+  'wpucd-plugin-settings', 
+  'wpucd-check-weekend4-widget' 
+);
+register_setting(
+  'wpucd-plugin-settings', 
+  'wpucd-check-weekend5-widget' 
+);
+register_setting(
+  'wpucd-plugin-settings', 
+  'wpucd-check-weekend6-widget' 
+);
+// Taxos label check
+register_setting(
+  'wpucd-plugin-settings', 
+  'wpucd-thankyou-page-check' 
+);
+register_setting(
+  'wpucd-plugin-settings', 
+  'wpucd-send-date-email' 
+);
+// controls
+// *** estimass
+register_setting(
+  'wpucd-plugin-settings',
+  'wpucd-estimass-color'
+);
+register_setting(
+  'wpucd-plugin-settings',
+  'wpucd-estimass-fontsize'
+);
+register_setting(
+  'wpucd-plugin-settings',
+  'wpucd-estimass-fontweight'
+);
+register_setting(
+  'wpucd-plugin-settings',
+  'wpucd-estimass-fontfamilly'
+);
+// *** estimdate
+register_setting(
+  'wpucd-plugin-settings',
+  'wpucd-estimdate-color'
+);
+// *** reason
+register_setting(
+  'wpucd-plugin-settings',
+  'wpucd-reason-color'
+);
+register_setting(
+  'wpucd-plugin-settings',
+  'wpucd-reason-fontsize'
+);
+register_setting(
+  'wpucd-plugin-settings',
+  'wpucd-reason-bdrcolor'
+);
+register_setting(
+  'wpucd-plugin-settings',
+  'wpucd-reason-bdrwidth'
+);
+register_setting(
+  'wpucd-plugin-settings',
+  'wpucd-reason-fontweight'
+);
+// *** estimdate
+register_setting(
+  'wpucd-plugin-settings',
+  'wpucd-estimdate-fontsize'
+);
+register_setting(
+  'wpucd-plugin-settings',
+  'wpucd-estimdate-fontweight'
+);
+register_setting(
+  'wpucd-plugin-settings',
+  'wpucd-estimdate-fontfamilly'
+);

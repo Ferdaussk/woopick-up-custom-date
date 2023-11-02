@@ -1,0 +1,14 @@
+
+input {
+    width: 300px;
+    padding: 7px;
+  }
+
+  .ui-state-highlight {
+    border: 0 !important;
+  }
+
+  .ui-state-highlight a {
+    background: #363636 !important;
+    color: #fff !important;
+  }

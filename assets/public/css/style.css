@@ -1,0 +1,60 @@
+.wpucd-select-date {
+    font-family: 'Arial', sans-serif;
+    background-color: rgba(255,243,255,1);
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 10px 0;
+    max-width: 300px;
+}
+
+.wpucd-select-date label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #5a5a5a;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.wpucd-select-date input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.wpucd-select-date input[type="text"]:focus {
+    outline: none;
+    border-color: #66afe9;
+    box-shadow: 0 0 10px #66afe9;
+}
+
+.wpucd-select-date input[type="text"]::placeholder {
+    color: #999;
+}
+.wpucd-thankyou-orddate {
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    background-color: rgba(255,243,255,1);
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    max-width: 400px;
+}
+.wpucd-thankyou-orddate label{
+    font-weight: bold;
+}
+.wpucd-select-date, .wpucd-thankyou-orddate {
+    text-align: center;
+}
+.wpucd-select-date img, .wpucd-thankyou-orddate img {
+    width: 100px;
+}
+.wpucd-date---on {
+    font-weight: 500;
+}

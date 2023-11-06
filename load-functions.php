@@ -190,7 +190,7 @@ class ClassProdWPUCD {
         echo '<div class="wpucd-select-date">';
             echo '<img src="'.get_option( 'wpucd-shipping-icon', plugin_dir_url( __FILE__ ) . 'assets/public/delivery-service.png').'" alt="img">';
             echo (get_option( 'wpucd-notice-position', 'top')=='top')?'<label for="">' . esc_html(get_option( 'wpucd-product-shipted', 'Recommended order received date and time ')).'</br></label>':'';
-            echo '<input type="text" name="selected_date" placeholder="'.date('d M Y h:i A').'" value="" />';
+            echo '<input type="text" name="selected_date" placeholder="'.date('d M Y').'" value="" />';
             echo (get_option( 'wpucd-notice-position')=='bottom')?'<label for="">' . esc_html(get_option( 'wpucd-product-shipted', 'Recommended order received date and time ')).'</br></label>':'';
         echo '</div>';
         $disabled_dates = get_option( 'wpucd-product-multidates', '2023-10-09');
@@ -206,7 +206,7 @@ class ClassProdWPUCD {
         <script>
             var skdisabledDates = <?php echo json_encode($disabled_dates); ?>;
             var skdisabledWeekdays = <?php echo json_encode($disabled_weekdays); ?>;
-            var skOrderDateFrmt = <?php echo json_encode(get_option( 'wpucd-check-orderdatefrmt-taxo-widget', 'DD MMM YYYY h:mm A' )); ?>;
+            var skOrderDateFrmt = <?php echo json_encode(get_option( 'wpucd-check-orderdatefrmt-taxo-widget', 'DD MMM YYYY' )); ?>;
         </script>
         <?php
     }

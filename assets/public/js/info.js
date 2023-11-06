@@ -14,7 +14,7 @@ $(function() {
   
     $('input[name="selected_date"]').daterangepicker({
       autoUpdateInput: false,
-      timePicker: true,
+      timePicker: false,
       timePickerIncrement: 30,
       timePicker24Hour: false,
       timePickerSeconds: false,

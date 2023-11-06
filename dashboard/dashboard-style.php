@@ -16,7 +16,7 @@ $wpucd_product_delivered_value = get_option( 'wpucd-product-delivered', 'This or
 $wpucd_shipping_icon_value = get_option( 'wpucd-shipping-icon', plugin_dir_url( __FILE__ ) . 'assets/public/delivery-service.png');
 $wpucd_shipimgsize_value = get_option( 'wpucd-shipimgsize-check');
 $wpucd_notice_position_value = get_option( 'wpucd-notice-position', 'top' );
-$wpucd_pagechack_value = get_option( 'wpucd-check-orderdatefrmt-taxo-widget', 'DD MMM YYYY h:mm A' );
+$wpucd_pagechack_value = get_option( 'wpucd-check-orderdatefrmt-taxo-widget', 'DD MMM YYYY' );
 $wpucd_weekend0_value = get_option( 'wpucd-check-weekend0-widget', 0 );
 $wpucd_weekend1_value = get_option( 'wpucd-check-weekend1-widget');
 $wpucd_weekend2_value = get_option( 'wpucd-check-weekend2-widget');
@@ -140,24 +140,24 @@ $all_fonts = [
         <div class="choose-page"><?php echo esc_html__('Date format:', 'woopick-up-custom-date'); ?></div>
         <div class="list-container">
           <div class="list-item">
-            <input type="radio" name="wpucd-check-orderdatefrmt-taxo-widget" value="DD MMM YYYY h:mm A"
-            <?php checked(get_option('wpucd-check-orderdatefrmt-taxo-widget', 'off'), 'DD MMM YYYY h:mm A'); ?>>
-            <label ><?php echo esc_html__('03 Nov 2023 3:30 PM', 'woopick-up-custom-date'); ?></label>
+            <input type="radio" name="wpucd-check-orderdatefrmt-taxo-widget" value="DD MMM YYYY"
+            <?php checked(get_option('wpucd-check-orderdatefrmt-taxo-widget', 'off'), 'DD MMM YYYY'); ?>>
+            <label ><?php echo esc_html__('03 Nov 2023', 'woopick-up-custom-date'); ?></label>
           </div>
           <div class="list-item">
             <input type="radio" name="wpucd-check-orderdatefrmt-taxo-widget" value="YYYY-MM-DD HH:mm"
             <?php checked(get_option('wpucd-check-orderdatefrmt-taxo-widget', 'off'), 'YYYY-MM-DD HH:mm'); ?>>
-            <label ><?php echo esc_html__('2023-11-03 23:03', 'woopick-up-custom-date'); ?></label>
+            <label ><?php echo esc_html__('2023-11-03', 'woopick-up-custom-date'); ?></label>
           </div>
           <div class="list-item">
-            <input type="radio" name="wpucd-check-orderdatefrmt-taxo-widget" value="MMMM D, YYYY h:mm A"
-            <?php checked(get_option('wpucd-check-orderdatefrmt-taxo-widget', 'off'), 'MMMM D, YYYY h:mm A'); ?>>
-            <label ><?php echo esc_html__('November 3, 2023 2:30 AM', 'woopick-up-custom-date'); ?></label>
+            <input type="radio" name="wpucd-check-orderdatefrmt-taxo-widget" value="MMMM D, YYYY"
+            <?php checked(get_option('wpucd-check-orderdatefrmt-taxo-widget', 'off'), 'MMMM D, YYYY'); ?>>
+            <label ><?php echo esc_html__('November 3, 2023', 'woopick-up-custom-date'); ?></label>
           </div>
           <div class="list-item">
-            <input type="radio" name="wpucd-check-orderdatefrmt-taxo-widget" value="MMM D, YYYY h:mm A"
-            <?php checked(get_option('wpucd-check-orderdatefrmt-taxo-widget', 'off'), 'MMM D, YYYY h:mm A'); ?>>
-            <label ><?php echo esc_html__('Oct 31, 2023 4:30 AM', 'woopick-up-custom-date'); ?></label>
+            <input type="radio" name="wpucd-check-orderdatefrmt-taxo-widget" value="MMM D, YYYY"
+            <?php checked(get_option('wpucd-check-orderdatefrmt-taxo-widget', 'off'), 'MMM D, YYYY'); ?>>
+            <label ><?php echo esc_html__('Oct 31, 2023', 'woopick-up-custom-date'); ?></label>
           </div>
         </div>
 
